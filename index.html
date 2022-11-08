@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--contenedor gral rojo-->
+    <div class="contenedor">
+
+
+        <!--titulo + 3 ciudades celeste-->
+        <div class="encabezado">
+
+            <div class="titulo"> <!--titulo-->
+                <h1>DojoWeather</h1>
+            </div>
+
+            <div class="ciudades">
+                <ul class="links">
+                    <li><a href="#" onclick="click_alerta(this)">Burbang</a></li>
+                    <li><a href="#" onclick="click_alerta(this)">Chicago</a> </li>
+                    <li><a href="#" onclick="click_alerta(this)">Dallas</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--ciudad principal + tipo t° amarillo-->
+        <div class="encabezado2">
+            <div class="titulo2">
+                <h2>San Jose</h2>
+            </div>
+
+            <div class="temp">
+                <label for="temperatura">show temperature in</label>
+                <select onchange="cambioTemperatura(this)" id="temperatura">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <!--contenedor 4 graficos verde-->
+        <div class="centro">
+            <div class="box">
+                <h2>Today</h2>
+                <img src="assets/some_rain.png" alt="">
+                <h4>some rain</h4>
+                <div class="grados">
+                    <div id="temp1" class="rojo"><h3>24°</h3></div>
+                    <div id="temp2" class="azul"><h3>18°</h3></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_sun.png" alt="">
+                <h4>some sun</h4>
+                <div class="grados">
+                    <div id="temp3" class="rojo"><h3>27°</h3></div>
+                    <div id="temp4" class="azul"><h3>19°</h3></div>
+                </div>    
+            </div>
+
+            <div class="box">
+                <h2>Friday</h2>
+                <img src="assets/some_rain.png" alt="">
+                <h4>some clouds</h4>
+                <div class="grados">
+                    <div id="temp5" class="rojo"><h3>21°</h3></div>
+                    <div id="temp6" class="azul"><h3>16°</h3></div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h2>Saturday</h2>
+                <img src="assets/some_rain.png" alt="">
+                <h4>some sun</h4>
+                <div class="grados">
+                    <div id="temp7" class="rojo"><h3>26°</h3></div>
+                    <div id="temp8" class="azul"><h3>21°</h3></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--cookies naranjo-->
+        <footer>
+            <div class="cookies">
+                
+                <img src="assets/cookie.png" alt="Icono cookie" id="cookie">
+                
+                <div>
+                    <h3>Stop! cookie time</h3>
+                    <p>We use cookies (sadly not the edible ones) to persolalize
+                        <br>
+                        content and ads, to provide social media features and to 
+                    </p>
+                    analyse our traffic. <a href="#">Read more...</a>
+                </div>
+    
+                <button onclick="borrarCookies()" class="btn">I Accept</button>    
+            </div>
+            </footer>
+    </div>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
